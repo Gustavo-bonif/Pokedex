@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="estilos/individuo.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -16,7 +20,7 @@
 
         <header>
             <div id="header-direito">
-                <p>
+                <p id="seta">
                     <a href="index.html">
                         <span class="material-symbols-outlined">
                             keyboard_backspace
@@ -40,68 +44,74 @@
             </div>
         </header>
 
-        <img src="Bulbasaur.png" alt="bulbasaur" id="imagem">
+        <!-- <div><img src="Bulbasaur.png" alt="bulbasaur" id="imagem-pokemon"></div> -->
 
         <main>
             <nav>
-                
-                    <ul id="navegacao">
-                        <li>About</li>
-                        <li>Base Stats</li>
-                        <li>Evolution</li>
-                        <li>Moves</li>
-                    </ul>
+
+                <ul id="navegacao">
+                    <li>About</li>
+                    <li>Base Stats</li>
+                    <li>Evolution</li>
+                    <li>Moves</li>
+                </ul>
             </nav>
 
-            <section class="container-informacoes">
-                <div class="esquerdo-informacoes">
-                    <ul>
-                        <li>Species</li>
-                        <li>Height</li>
-                        <li>Weight</li>
-                        <li>Abilites</li>
-                    </ul>
-                </div>
-                <div>
-                    <ul class="direito-informacoes">
-                        <li>Seed</li>
-                        <li>2*3,6*(0.70cm)</li>
-                        <li>15.2libs(6.9kg)</li>
-                        <li>Overgrow.Chlorophyl</li>
-                    </ul>
-                </div>
-            </section>
+            <section id="altera">
 
-            <section class="container-informacoes">
-                <div class="esquerdo-informacoes">
-                    <h3>Breeding</h3>
-                    <ul>
-                        <li>Gender</li>
-                        <li>Egg Groups</li>
-                        <li>Egg Cycle</li>
-                    </ul>
-                </div>
-
-                <div class="direito-informacoes">
-                    <ul>
-                        <li>
-                            <span class="material-symbols-outlined">
-                                male
+                <section class="container-informacoes">
+                    <div class="esquerdo-informacoes">
+                        <ul>
+                            <li>Species</li>
+                            <li>Height</li>
+                            <li>Weight</li>
+                            <li>Abilites</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="direito-informacoes">
+                            <li>Seed</li>
+                            <li>2*3,6*(0.70cm)</li>
+                            <li>15.2libs(6.9kg)</li>
+                            <li>Overgrow.Chlorophyl</li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="container-informacoes">
+                    <div class="esquerdo-informacoes">
+                        <h3>Breeding</h3>
+                        <ul>
+                            <li>Gender</li>
+                            <li>Egg Groups</li>
+                            <li>Egg Cycle</li>
+                        </ul>
+                    </div>
+                    <div class="direito-informacoes">
+                        <ul>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    male
                                 </span>
-
-                            <span class="material-symbols-outlined">
-                            female</span>
-                        </li>
-                        <li>Monster</li>
-                        <li>Grass</li>
-                    </ul>
-                </div>
+                                <span class="material-symbols-outlined">
+                                    female</span>
+                            </li>
+                            <li>Monster</li>
+                            <li>Grass</li>
+                        </ul>
+                    </div>
+                </section>
             </section>
 
 
         </main>
     </section>
 
+
+
+
+    <script src="js/pokemon-model.js"></script>
+    <script src="js/poke-api.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

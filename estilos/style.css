@@ -66,17 +66,18 @@ body{
 .pokemon .detail .types{
     margin: 0;
     padding: 0;
-    list-style: none;filter: brightness(1.2);
+    list-style: none;
+    filter: brightness(1.2);
     text-align: center;
 }
 
 .pokemon .detail .type{
     /* background-color: #50D7C3; */
     color: white;
-    padding: 0.25rem 0.2rem;
+    padding: 4px 6px;
     margin: .125rem;
     font-size: .625rem;
-    border-radius: 1rem;
+    border-radius: 8px;
 }
 
 .pokemon  .detail img{
