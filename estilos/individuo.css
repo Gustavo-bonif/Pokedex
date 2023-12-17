@@ -29,12 +29,12 @@
     padding: 0;
     border: border-box;
     font-family: 'Roboto', 'sans-serif';
+    font-weight: 400;
 }
 
 
 body{
-    background-color: white;
-    
+    background-color: rgb(143, 133, 133);
 }
 
 section#container{
@@ -89,10 +89,12 @@ header > div#header-direito > p#nome{
 .type{
      background-color:var(--grass);
     color: white;
-    padding: 4px 6px;
-    margin: .125rem;
-    font-size: .625rem;
-    border-radius: 1rem;
+    padding: 5px 7px;
+    margin: 2px;
+    font-size: 10px;
+    border-radius: 16px;
+    text-transform: capitalize;
+    font-weight: 100;
 }
 
 
@@ -103,4 +105,103 @@ header > div#header-esquerdo{
     align-items: center;
     gap:55px;
 }
+
+.container-imagem{
+    max-width: 150px;
+    position: relative;
+    margin: auto;
+}
+
+.container-imagem > img#imagem-pokemon{
+   max-width: 100%;
+   position: absolute;
+   z-index: 99;
+   bottom: -155px;
+   
+}
+
+.container-imagem > img#simbolo-pokebola{
+    max-width: 100%;
+    position: absolute;
+    z-index: 1;
+    opacity: 0.4;
+    right: -80px;
+    bottom: -140px;
+ }
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 16px;
+    padding: 20px;
+    position: absolute;
+    width: 261px;
+    bottom: 0px;
+}
+
+main ul{
+    list-style: none;
+    max-width:250;
+}
+
+main > nav >ul#navegacao{
+    display: flex;
+    flex-direction: row;
+    padding: 20px 0px;
+    justify-content: space-between;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* main > nav >ul#navegacao> li{
+    opacity: 1;
+    font-weight: bold;
+} */
+
+section.altera{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+section.container-informacoes{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+div.direito-informacoes>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+#texto-genero{
+    padding-top: 20px;
+}
+
+div.esquerdo-informacoes>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    opacity: 0.8;
+}
+
+#generos{
+    padding-top: 40px;
+}
+
+.about{
+    
+}
+
+
+
+
+
+
+
+
 
