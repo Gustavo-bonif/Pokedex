@@ -37,9 +37,9 @@ body{
     background-color: rgb(143, 133, 133);
 }
 
-section#container{
+section.container{
 
-    background-color:var(--grass);
+     /* background-color:var(--grass);  */
     border-radius: 30px;
     height: 94vh;
     max-width: 300px;
