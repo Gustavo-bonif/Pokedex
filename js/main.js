@@ -5,9 +5,8 @@ let offset = 0;
 const limit = 9;
 
 carregarNovos.addEventListener('click', () => {
-    
-        offset += limit
-        carregaNovaLeva(offset, limit);
+    offset += limit
+    carregaNovaLeva(offset, limit);
 });
 
 carregarAnteriores.addEventListener('click', () => {
@@ -21,9 +20,9 @@ carregarAnteriores.addEventListener('click', () => {
 
 function covertePokemonEmLi(pokemon) {
     return `
-    <li class="pokemon ${pokemon.type}">
+    <li class="pokemon ${pokemon.type}" onclick="chamaPokemonIndividual(${pokemon.number})">
                 <span class="number">${pokemon.number}</span>
-                <span class="name">${pokemon.name}</span>
+                <a href="pokemon.html"><span class="name">${pokemon.name}</span></a>
                 <div class="detail">
                     <ol class="types">
                         ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
@@ -35,12 +34,28 @@ function covertePokemonEmLi(pokemon) {
 }
 
 
+function convertePokemonIndividual(pokemon){
+    
+}
+
 function carregaNovaLeva(offset, limit) {
 
-    pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
-        const newHTML = pokemons.map(covertePokemonEmLi).join('')
-        pokemonlist.innerHTML = newHTML
-    })
+    pokeApi.getPokemons(offset, limit)
+        .then((pokemons = []) => {
+            const newHTML = pokemons.map(covertePokemonEmLi).join('')
+            pokemonlist.innerHTML = newHTML
+        })
+
+}
+function chamaPokemonIndividual(id){
+
+    window.alert(`Pokemon selecionado: ${id}`);
+
+    // pokeApi.getPokemons(id, 1)
+    //     .then((pokemons = []) => {
+    //         const newHTML = pokemons.map(covertePokemonEmLi).join('')
+    //         pokemonlist.innerHTML = newHTML
+    //     })
 
 }
 

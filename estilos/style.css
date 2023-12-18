@@ -42,6 +42,10 @@ body{
     border-radius: 16px;
 }
 
+.pokemon >a{
+    text-decoration: none;
+}
+
 .pokemon .number{
     /* color: #46cbab */
     color: #000 ;
@@ -106,6 +110,8 @@ body{
 .botao:hover{
     background-color: #5a64b4;
 }
+
+
 
 
 
