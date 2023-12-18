@@ -39,7 +39,7 @@ body{
 
 section#container{
 
-    background-color: var(--grass);
+    background-color:var(--grass);
     border-radius: 30px;
     height: 94vh;
     max-width: 300px;
@@ -53,6 +53,12 @@ header{
     align-items: center;
     padding: 40px 30px;
     color: white;
+    z-index: 99;
+    background-image: url(../imagens/canto_superior1.png);
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 54%;
+    border-radius: 30px;
 }
 
 header > div#header-direito{
@@ -64,6 +70,7 @@ header > div#header-direito{
 
 header > div#header-direito > p#seta > a{
     text-decoration: none;
+    cursor: pointer;
     color: white;
 }
 
@@ -161,30 +168,20 @@ main ul{
     max-width:250;
 }
 
-main > nav >ul#navegacao{
+main > nav >ul#navegacao {
     display: flex;
     flex-direction: row;
     padding: 20px 0px;
     justify-content: space-between;
+    position: relative;
+    
+}
+
+main > nav >ul#navegacao >li{
     font-size: 14px;
     cursor: pointer;
     opacity: 0.8;
 }
-
-
-main > nav >ul#navegacao> a{
-    text-decoration: none;
-    color: black;
-}
-
-/* main > nav >ul#navegacao> a::after{
-    content: " ";
-    width: 19%;
-    height: 4px;
-    background-color: black;
-    position: absolute;
-} */
-    
 
 
 section.altera{
