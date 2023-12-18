@@ -37,9 +37,9 @@ body{
     background-color: rgb(143, 133, 133);
 }
 
-section.container{
+section#container{
 
-     /* background-color:var(--grass);  */
+    /* background-color:var(--grass); */
     border-radius: 30px;
     height: 94vh;
     max-width: 300px;
@@ -94,7 +94,7 @@ header > div#header-direito > p#nome{
 }
 
 .type{
-     background-color:var(--grass);
+     /* background-color:var(--grass); */
     color: white;
     padding: 5px 7px;
     margin: 2px;
