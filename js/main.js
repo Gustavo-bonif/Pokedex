@@ -34,9 +34,6 @@ function covertePokemonEmLi(pokemon) {
 }
 
 
-function convertePokemonIndividual(pokemon){
-    
-}
 
 function carregaNovaLeva(offset, limit) {
 
@@ -47,16 +44,17 @@ function carregaNovaLeva(offset, limit) {
         })
 
 }
+
+pokeApi.getPokemons(offset, limit)
+        .then((pokemons = []) => {
+            const newHTML = pokemons.map(covertePokemonEmLi).join('')
+            pokemonlist.innerHTML = newHTML
+        })
+
 function chamaPokemonIndividual(id){
 
-    window.alert(`Pokemon selecionado: ${id}`);
-
-    // pokeApi.getPokemons(id, 1)
-    //     .then((pokemons = []) => {
-    //         const newHTML = pokemons.map(covertePokemonEmLi).join('')
-    //         pokemonlist.innerHTML = newHTML
-    //     })
-
+    sessionStorage.setItem('individuo',id);
+  
 }
 
 
