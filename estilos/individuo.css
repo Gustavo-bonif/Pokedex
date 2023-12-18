@@ -129,6 +129,22 @@ header > div#header-esquerdo{
     bottom: -140px;
  }
 
+ .container-imagem> img#pontos{
+    max-width: 45%;
+    position: absolute;
+    opacity: 0.4;
+    top: 22px;
+    left: -13px;
+ }
+
+ #imagem-topo{
+    position: absolute;
+    opacity: 0.3;
+    z-index: 0.5;
+    border-radius: 28px;
+    height: 170px;
+ }
+
 main{
     display: flex;
     flex-direction: column;
@@ -155,10 +171,21 @@ main > nav >ul#navegacao{
     opacity: 0.8;
 }
 
-/* main > nav >ul#navegacao> li{
-    opacity: 1;
-    font-weight: bold;
+
+main > nav >ul#navegacao> a{
+    text-decoration: none;
+    color: black;
+}
+
+/* main > nav >ul#navegacao> a::after{
+    content: " ";
+    width: 19%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
 } */
+    
+
 
 section.altera{
     display: flex;
