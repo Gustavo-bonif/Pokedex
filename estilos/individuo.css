@@ -39,11 +39,11 @@ body{
 
 section#container{
 
-    /* background-color:var(--grass); */
     border-radius: 30px;
-    height: 94vh;
+    height: 665px;
     max-width: 300px;
     margin: 30px auto;
+    position: relative;
 
 }
 
