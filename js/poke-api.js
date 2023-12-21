@@ -5,6 +5,11 @@ function cnvertePokeApiDetailpokemon(pokeDetail){
     const pokemon = new Pokemon()
     pokemon.number = pokeDetail.id
     pokemon.name = pokeDetail.name
+     pokemon.height = pokeDetail.height / 10
+    pokemon.weight = pokeDetail.weight /10
+
+    const abilities  = pokeDetail.abilities.map((abilitySlot) => abilitySlot.ability.name)
+    pokemon.abilities = abilities;
 
     const types = pokeDetail.types.map((typeSlot) => typeSlot.type.name)
     const [type] = types
@@ -12,6 +17,7 @@ function cnvertePokeApiDetailpokemon(pokeDetail){
     pokemon.types = types
     pokemon.type = type
     pokemon.image = pokeDetail.sprites.other.dream_world.front_default
+    pokemon.image_shiny = pokeDetail.sprites.front_shiny
 
     return pokemon
 }

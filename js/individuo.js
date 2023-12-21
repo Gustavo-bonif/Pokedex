@@ -59,7 +59,6 @@ function convertePokemonIndividual(pokemon) {
                 <section class="container-informacoes">
                     <div class="esquerdo-informacoes">
                         <ul>
-                            <li>Species</li>
                             <li>Height</li>
                             <li>Weight</li>
                             <li>Abilites</li>
@@ -67,10 +66,11 @@ function convertePokemonIndividual(pokemon) {
                     </div>
                     <div class="direito-informacoes">
                         <ul>
-                            <li>Seed</li>
-                            <li>2*3,6*(0.70cm)</li>
-                            <li>15.2libs(6.9kg)</li>
-                            <li>Overgrow.Chlorophyl</li>
+                            <li>${pokemon.height} m</li>
+                            <li>${pokemon.weight} kg</li>
+                            <ol>
+                            ${pokemon.abilities.map((ability) => `${ability}`).join(', ')}
+                            </ol>
                         </ul>
                     </div>
                 </section>
